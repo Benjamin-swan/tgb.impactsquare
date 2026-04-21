@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# The Great Breakthrough — 도서 요약 페이지 📖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+이 프로젝트는 도서 **The Great Breakthrough**의 핵심 내용을 시각적으로 잘 와닿게 정리한 인터랙티브 웹 요약본입니다. React와 TypeScript, 그리고 Vite 환경을 기반으로 제작되었습니다.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+배포된 웹페이지에서 바로 요약본을 확인하실 수 있습니다:
+👉 [The Great Breakthrough 요약본 보기](https://benjamin-swan.github.io/tgb.impactsquare/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
+- **Framework**: React 19
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS / Radix UI 
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+이 프로젝트를 로컬 환경에서 실행하고 싶으시다면 다음 과정을 진행해 주세요.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. 패키지 설치
+```bash
+npm install
+# 혹은
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. 개발 서버 실행
+```bash
+npm run dev
+# 혹은
+pnpm dev
 ```
+명령어 실행 후 브라우저에서 `http://localhost:5173` 으로 접속하여 확인 가능합니다.
+
+## ✨ Features
+- 도서의 주요 장(Chapter)별 핵심 요약 제공
+- 빠른 렌더링과 직관적인 네비게이션
+- 깔끔하고 독서에 집중하기 좋은 UI/UX 디자인
+
+---
+**Note**: 본 페이지는 도서에 대한 이해와 리뷰를 돕기 목적으로 제작되었습니다.
