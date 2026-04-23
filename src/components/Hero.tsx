@@ -23,9 +23,6 @@ export default function Hero() {
       <div className="relative max-w-5xl mx-auto px-6 md:px-12 py-24 w-full">
         <div className="flex items-center gap-3 mb-8 fade-up">
           <div className="h-px w-10 bg-amber-500" />
-          <span className="text-amber-400 text-sm font-semibold tracking-widest uppercase">
-            도서 요약본 · Book Summary
-          </span>
         </div>
 
         <h1 className="font-bold leading-tight mb-6 fade-up delay-100"
