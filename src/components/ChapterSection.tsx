@@ -9,6 +9,7 @@ import Ch06 from "@/components/chapters/Ch06";
 
 interface Props {
   chapter: ChapterData;
+  index: number;
 }
 
 const contentMap: Record<string, React.ReactNode> = {
